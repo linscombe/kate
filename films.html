@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Short Films — Kate Linscombe</title>
+<meta name="description" content="Short films by Kate Linscombe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav">
+    <a class="nav-brand" href="index.html">Kate Linscombe</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="films.html">Short Films</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-header wrap">
+  <h1>Short Films</h1>
+  <p>A collection of short films I've written, directed, shot, or edited. Click any project to watch and see full credits.</p>
+</div>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="grid" id="films-grid">
+      <p class="empty-state">Loading…</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>&copy; 2026 Kate Linscombe</p>
+    <ul class="footer-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="social.html">Social</a></li>    </ul>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/films.js"></script>
+</body>
+</html>

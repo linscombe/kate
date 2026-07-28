@@ -1,0 +1,8 @@
+[
+  { "id": "p1", "title": "PLACEHOLDER — Photo Title", "category": "Portrait", "date": "2026-06", "caption": "One or two sentences of context: where/when it was shot and why it matters." },
+  { "id": "p2", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2026-05", "caption": "Replace with real caption." },
+  { "id": "p3", "title": "PLACEHOLDER — Photo Title", "category": "On-Set / BTS", "date": "2026-04", "caption": "Replace with real caption." },
+  { "id": "p4", "title": "PLACEHOLDER — Photo Title", "category": "Street", "date": "2026-02", "caption": "Replace with real caption." },
+  { "id": "p5", "title": "PLACEHOLDER — Photo Title", "category": "Portrait", "date": "2025-12", "caption": "Replace with real caption." },
+  { "id": "p6", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2025-10", "caption": "Replace with real caption." }
+]

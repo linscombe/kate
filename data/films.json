@@ -1,0 +1,32 @@
+[
+  {
+    "id": "f1",
+    "title": "PLACEHOLDER — Working Title",
+    "year": "2026",
+    "date": "2026-06",
+    "role": "Director / Editor",
+    "logline": "One-sentence hook that makes someone want to press play.",
+    "description": "A short paragraph (2-4 sentences) with more context: what the film is about, why you made it, festival selections or awards if any, and your specific role on the project.",
+    "embedUrl": "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID"
+  },
+  {
+    "id": "f2",
+    "title": "PLACEHOLDER — Second Project",
+    "year": "2026",
+    "date": "2026-03",
+    "role": "Cinematographer",
+    "logline": "Replace with a short, punchy logline.",
+    "description": "Replace with the full description for this project.",
+    "embedUrl": "https://player.vimeo.com/video/REPLACE_WITH_VIDEO_ID"
+  },
+  {
+    "id": "f3",
+    "title": "PLACEHOLDER — Third Project",
+    "year": "2025",
+    "date": "2025-11",
+    "role": "Writer / Director",
+    "logline": "Replace with a short, punchy logline.",
+    "description": "Replace with the full description for this project.",
+    "embedUrl": "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID"
+  }
+]
