@@ -26,9 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function photoCard(photo) {
   return `
     <div class="card" data-photo-id="${photo.id}">
-      <div class="card-media photo" style="background:${gradientFor(photo.id)}">
-        <span>${escapeHtml(photo.title)}</span>
-      </div>
+      ${mediaMarkup(photo, "card-media photo")}
       <div class="card-body">
         <p class="card-meta">${escapeHtml(photo.category)} &middot; ${escapeHtml(photo.date)}</p>
         <h3>${escapeHtml(photo.title)}</h3>

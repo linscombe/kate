@@ -63,11 +63,14 @@ function openVideoModal(film) {
 function openImageModal(photo) {
   const overlay = document.getElementById("modal-overlay");
   const body = document.getElementById("modal-body");
+  // Grid cards force a uniform crop for a tidy layout, but the popup
+  // should show the real photo uncropped at its natural aspect ratio.
+  const media = photo.image
+    ? `<img class="modal-photo" src="${photo.image}" alt="${escapeHtml(photo.title)}">`
+    : mediaMarkup(photo, "card-media photo");
   body.innerHTML = `
     <div class="modal-image-wrap">
-      <div class="card-media photo" style="background:${gradientFor(photo.id)}">
-        <span>${escapeHtml(photo.title)}</span>
-      </div>
+      ${media}
     </div>
     <div class="modal-body">
       <p class="card-meta">${escapeHtml(photo.category)} &middot; ${escapeHtml(photo.date)}</p>
@@ -78,9 +81,17 @@ function openImageModal(photo) {
   overlay.classList.add("open");
 }
 
+// Renders a real photo when item.image is set, otherwise falls back to
+// the warm gradient placeholder (see CONTENT_GUIDE.md for adding images).
+function mediaMarkup(item, className) {
+  if (item.image) {
+    return `<div class="${className}" style="background-image:url('${item.image}')"></div>`;
+  }
+  return `<div class="${className}" style="background:${gradientFor(item.id)}"><span>${escapeHtml(item.title)}</span></div>`;
+}
+
 // Deterministic warm gradient per item so placeholders look varied
-// without needing real images yet. Replace card-media backgrounds
-// with real <img> tags once photos are added (see CONTENT_GUIDE.md).
+// without needing real images yet.
 function gradientFor(id) {
   const palettes = [
     "linear-gradient(160deg,#d9c9b8,#a8583e)",

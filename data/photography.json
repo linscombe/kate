@@ -1,8 +1,8 @@
 [
-  { "id": "p1", "title": "PLACEHOLDER — Photo Title", "category": "Portrait", "date": "2026-06", "caption": "One or two sentences of context: where/when it was shot and why it matters." },
-  { "id": "p2", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2026-05", "caption": "Replace with real caption." },
-  { "id": "p3", "title": "PLACEHOLDER — Photo Title", "category": "On-Set / BTS", "date": "2026-04", "caption": "Replace with real caption." },
-  { "id": "p4", "title": "PLACEHOLDER — Photo Title", "category": "Street", "date": "2026-02", "caption": "Replace with real caption." },
-  { "id": "p5", "title": "PLACEHOLDER — Photo Title", "category": "Portrait", "date": "2025-12", "caption": "Replace with real caption." },
-  { "id": "p6", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2025-10", "caption": "Replace with real caption." }
+  { "id": "p1", "title": "Deer in the Woods", "category": "Wildlife", "date": "2025-03", "caption": "Shot in Blanco, TX on Nikon D100. The best shots are often the ones you don't plan.", "image": "images/deer-in-the-woods.jpg" },
+  { "id": "p2", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2025-02", "caption": "Replace with real caption." },
+  { "id": "p3", "title": "PLACEHOLDER — Photo Title", "category": "On-Set / BTS", "date": "2025-01", "caption": "Replace with real caption." },
+  { "id": "p4", "title": "PLACEHOLDER — Photo Title", "category": "Street", "date": "2024-12", "caption": "Replace with real caption." },
+  { "id": "p5", "title": "PLACEHOLDER — Photo Title", "category": "Portrait", "date": "2024-11", "caption": "Replace with real caption." },
+  { "id": "p6", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2024-10", "caption": "Replace with real caption." }
 ]

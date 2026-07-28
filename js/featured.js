@@ -37,9 +37,7 @@ function featuredCard(item) {
   const isFilm = item.type === "film";
   return `
     <div class="card" data-featured>
-      <div class="card-media ${isFilm ? "" : "photo"}" style="background:${gradientFor(d.id)}">
-        <span>${escapeHtml(d.title)}</span>
-      </div>
+      ${mediaMarkup(d, `card-media ${isFilm ? "" : "photo"}`)}
       <div class="card-body">
         <p class="card-meta">${isFilm ? "Short Film" : "Photography"} &middot; ${escapeHtml(d.year || d.date)}</p>
         <h3>${escapeHtml(d.title)}</h3>
