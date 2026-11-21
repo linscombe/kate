@@ -1,32 +1,36 @@
 [
   {
-    "id": "f1",
-    "title": "PLACEHOLDER — Working Title",
+    "id": "f4",
+    "title": "Books",
     "year": "2026",
-    "date": "2026-06",
-    "role": "Director / Editor",
-    "logline": "One-sentence hook that makes someone want to press play.",
-    "description": "A short paragraph (2-4 sentences) with more context: what the film is about, why you made it, festival selections or awards if any, and your specific role on the project.",
-    "embedUrl": "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID"
+    "date": "2026-08-10",
+    "role": "Director / Editor / Cinematographer",
+    "logline": "You never know the whole story until you turn the page.",
+    "description": "A short personal piece about books — the things that stack up on our nightstand.",
+    "image": "images/books-poster.jpg",
+    "embedUrl": "https://www.youtube.com/embed/gxp6FUvsmWk"
+  },
+  {
+    "id": "f1",
+    "title": "Tall Grass",
+    "year": "2026",
+    "date": "2026-08-27",
+    "role": "Cinematographer / Editor",
+    "logline": "",
+    "description": "Shot and edited by Kate Linscombe.",
+    "image": "images/tall-grass-poster.jpg",
+    "embedUrl": "https://www.youtube.com/embed/7Ijql1e3KpE"
   },
   {
     "id": "f2",
-    "title": "PLACEHOLDER — Second Project",
+    "title": "The Voicemail",
     "year": "2026",
-    "date": "2026-03",
-    "role": "Cinematographer",
-    "logline": "Replace with a short, punchy logline.",
-    "description": "Replace with the full description for this project.",
-    "embedUrl": "https://player.vimeo.com/video/REPLACE_WITH_VIDEO_ID"
-  },
-  {
-    "id": "f3",
-    "title": "PLACEHOLDER — Third Project",
-    "year": "2025",
-    "date": "2025-11",
-    "role": "Writer / Director",
-    "logline": "Replace with a short, punchy logline.",
-    "description": "Replace with the full description for this project.",
-    "embedUrl": "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID"
+    "date": "2026-09",
+    "role": "Director",
+    "logline": "somewhere between then and now",
+    "description": "An old voicemail and everything that comes with it by Kate Linscombe.",
+    "embedUrl": "https://www.youtube.com/embed/sFI86xl2Kl8",
+    "image": "images/the-voicemail-poster.jpg",
+    "watchUrl": "https://www.youtube.com/watch?v=sFI86xl2Kl8"
   }
 ]

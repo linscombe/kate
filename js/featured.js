@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       el.addEventListener("click", () => {
         const item = items[i];
         if (item.type === "film") {
-          openVideoModal(item.data);
+          openFilm(item.data);
         } else {
           openImageModal(item.data);
         }
@@ -42,6 +42,7 @@ function featuredCard(item) {
         <p class="card-meta">${isFilm ? "Short Film" : "Photography"} &middot; ${escapeHtml(d.year || d.date)}</p>
         <h3>${escapeHtml(d.title)}</h3>
         <p>${escapeHtml(d.logline || d.caption || "")}</p>
+        ${isFilm && d.watchUrl ? '<p class="card-link">Watch on YouTube &#8599;</p>' : ""}
       </div>
     </div>
   `;

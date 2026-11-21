@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       grid.querySelectorAll("[data-film-id]").forEach((el) => {
         el.addEventListener("click", () => {
           const film = sorted.find((f) => String(f.id) === el.dataset.filmId);
-          openVideoModal(film);
+          openFilm(film);
         });
       });
     })
@@ -26,13 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function filmCard(film) {
   return `
     <div class="card" data-film-id="${film.id}">
-      <div class="card-media" style="background:${gradientFor(film.id)}">
-        <span>${escapeHtml(film.title)}</span>
-      </div>
+      ${mediaMarkup(film, "card-media")}
       <div class="card-body">
         <p class="card-meta">${escapeHtml(film.year)} &middot; ${escapeHtml(film.role)}</p>
         <h3>${escapeHtml(film.title)}</h3>
         <p>${escapeHtml(film.logline)}</p>
+        ${film.watchUrl ? '<p class="card-link">Watch on YouTube &#8599;</p>' : ""}
       </div>
     </div>
   `;

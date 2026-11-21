@@ -42,14 +42,33 @@ function closeModal() {
   body.innerHTML = "";
 }
 
+// Entry point for a film click. A film with watchUrl opens on YouTube in a
+// new tab instead of showing a player that errors — used when an embed is
+// blocked (e.g. a music copyright claim). Drop watchUrl to go back to the
+// in-page player.
+function openFilm(film) {
+  if (film.watchUrl) {
+    window.open(film.watchUrl, "_blank", "noopener,noreferrer");
+    return;
+  }
+  openVideoModal(film);
+}
+
 function openVideoModal(film) {
   const overlay = document.getElementById("modal-overlay");
   const body = document.getElementById("modal-body");
+  // videoUrl = a file served from this site (video/*.mp4).
+  // embedUrl = a YouTube/Vimeo embed. Self-hosted wins when both are set.
+  const player = film.videoUrl
+    ? `<video src="${film.videoUrl}" title="${escapeHtml(film.title)}"
+        ${film.image ? `poster="${film.image}"` : ""}
+        controls autoplay playsinline preload="metadata"></video>`
+    : `<iframe src="${film.embedUrl}" title="${escapeHtml(film.title)}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>`;
   body.innerHTML = `
     <div class="modal-video">
-      <iframe src="${film.embedUrl}" title="${escapeHtml(film.title)}"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      ${player}
     </div>
     <div class="modal-body">
       <p class="card-meta">${escapeHtml(film.year)} &middot; ${escapeHtml(film.role)}</p>

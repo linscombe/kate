@@ -332,7 +332,31 @@ p {
   margin-bottom: 0;
 }
 
+/* Shown on films that open on YouTube rather than in the in-page player. */
+.card-body p.card-link {
+  margin-top: var(--space-xs);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+}
+
 /* ---------- About page ---------- */
+
+/* Pared-back About page: a few lines of text, no portrait or sidebar. */
+.about-simple {
+  max-width: 54ch;
+}
+
+.about-simple p {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-sm);
+}
+
+.about-simple .about-contact {
+  margin-top: var(--space-md);
+  color: var(--color-text-muted);
+}
 
 .about-layout {
   display: grid;
@@ -471,10 +495,13 @@ p {
   width: 100%;
 }
 
-.modal-video iframe {
+.modal-video iframe,
+.modal-video video {
   width: 100%;
   height: 100%;
   border: none;
+  display: block;
+  background: #000;
 }
 
 .modal-body {

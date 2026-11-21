@@ -1,8 +1,18 @@
 [
-  { "id": "p1", "title": "Deer in the Woods", "category": "Wildlife", "date": "2025-03", "caption": "Shot in Blanco, TX on Nikon D100. The best shots are often the ones you don't plan.", "image": "images/deer-in-the-woods.jpg" },
-  { "id": "p2", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2025-02", "caption": "Replace with real caption." },
-  { "id": "p3", "title": "PLACEHOLDER — Photo Title", "category": "On-Set / BTS", "date": "2025-01", "caption": "Replace with real caption." },
-  { "id": "p4", "title": "PLACEHOLDER — Photo Title", "category": "Street", "date": "2024-12", "caption": "Replace with real caption." },
-  { "id": "p5", "title": "Lydia", "category": "Portrait", "date": "2026-10", "caption": "Golden hour under the willows.", "image": "images/lydia.jpg" },
-  { "id": "p6", "title": "PLACEHOLDER — Photo Title", "category": "Landscape", "date": "2024-10", "caption": "Replace with real caption." }
+  {
+    "id": "p1",
+    "title": "Deer in the Woods",
+    "category": "Wildlife",
+    "date": "2025-03",
+    "caption": "Shot in Blanco, TX on Nikon D100. The best shots are often the ones you don't plan.",
+    "image": "images/deer-in-the-woods.jpg"
+  },
+  {
+    "id": "p5",
+    "title": "Lydia",
+    "category": "Portrait",
+    "date": "2026-10",
+    "caption": "Golden hour under the willows.",
+    "image": "images/lydia.jpg"
+  }
 ]

@@ -29,8 +29,18 @@ Rules:
   - YouTube: `https://www.youtube.com/embed/VIDEO_ID` (VIDEO_ID is the part
     after `v=` or `youtu.be/` in the normal link)
   - Vimeo: `https://player.vimeo.com/video/VIDEO_ID`
-  - If a film is private/unlisted, that's fine — unlisted YouTube/Vimeo
-    videos still work in an embed.
+  - Unlisted YouTube/Vimeo videos work fine in an embed. **Private ones do
+    not** — they show "This video is unavailable" on the site.
+- Instead of `embedUrl`, a film can use `"videoUrl": "video/name.mp4"` to play
+  a file kept in this repo. Only worth it for something short: Cloudflare
+  Pages won't serve a file over 25MB, and anything committed stays in git
+  history for good. Embeds are the better default.
+- If YouTube refuses to play a film in an embed — usually a copyright claim
+  on its music — add `"watchUrl": "https://www.youtube.com/watch?v=VIDEO_ID"`.
+  The card then opens the film on YouTube in a new tab and shows a small
+  "Watch on YouTube" line, instead of a player that errors. Leave `embedUrl`
+  in place: once the claim is resolved, delete the `watchUrl` line and the
+  in-page player comes back.
 
 ## Adding a new photo
 
@@ -44,17 +54,17 @@ Same rules: unique `id`, `date` as `YYYY-MM`.
 
 ### Using real images instead of the color placeholders
 
-Right now every card shows a colored gradient instead of a real photo/thumbnail.
-To use a real image:
+A card shows a real image when its entry has an `"image"` field, and falls
+back to a colored gradient when it doesn't. The code side is already wired up
+on every page, so this is just two steps:
 
-1. Add the image file to an `images/` folder (create it if needed), e.g.
-   `images/photo-01.jpg`. Keep files reasonably small (under ~1–2MB each,
-   resize to roughly 2000px on the long edge) so the site stays fast.
+1. Add the image file to `images/`, e.g. `images/photo-01.jpg`. Keep files
+   reasonably small (under ~1–2MB each, resize to roughly 2000px on the long
+   edge) so the site stays fast.
 2. Add an `"image": "images/photo-01.jpg"` field to that item's JSON entry.
-3. Ask Claude to swap the gradient `<div class="card-media">` for an
-   `<img>` tag wherever `image` is present — this only needs to be done
-   once per page (`js/photography.js`, `js/films.js`, `js/featured.js`),
-   not per project.
+
+For a film, `"image"` is the thumbnail on the card — a still pulled from the
+film works well. The video itself still comes from `embedUrl`.
 
 ## Editing text elsewhere
 
